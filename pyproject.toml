@@ -1,0 +1,21 @@
+[project]
+name = "ocpp-controler"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Mickaël Descamps",email = "mickael.descamps@mineyou.fr"}
+]
+readme = "README.md"
+requires-python = "~3.10"
+dependencies = [
+    "ocpp (>=2.0.0,<3.0.0)",
+    "websockets (>=15.0.1,<16.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "ocpp_controler", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
